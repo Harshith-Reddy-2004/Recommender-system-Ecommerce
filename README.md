@@ -95,3 +95,28 @@ It leverages collaborative filtering and ranking-based techniques to analyze use
 RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(r_{i} - \hat{r_{i}})^2}
 \]
 
+## 💡 Key Learnings
+- How to handle sparse user–item rating matrices.
+- Implementation of user similarity using **cosine similarity**.
+- Understanding and applying **Singular Value Decomposition (SVD)** for latent factor modeling.
+- Model evaluation using **RMSE**.
+- Comparative study of rank-based, memory-based, and model-based recommenders.
+
+---
+
+## 🧰 Tech Stack
+
+- **Python**
+- **Libraries:**  
+  `NumPy`, `Pandas`, `scikit-learn`, `SciPy`, `Matplotlib`
+- **Algorithmic Techniques:**  
+  - Rank-based popularity model  
+  - User-based collaborative filtering (Cosine similarity)  
+  - Model-based collaborative filtering (SVD)
+
+---
+
+## 🧑‍💻 Author
+
+**Harshith Reddy**  
+Machine Learning & Data Science Enthusiast
