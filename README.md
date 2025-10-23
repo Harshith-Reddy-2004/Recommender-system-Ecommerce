@@ -68,9 +68,8 @@ It leverages collaborative filtering and ranking-based techniques to analyze use
    - Decompose the sparse matrix into **U**, **Σ**, and **Vᵗ**.
    - Retain `k = 50` latent features capturing hidden patterns between users and products.
 3. Compute **predicted ratings**:
-   \[
-   \hat{R} = U \times Σ \times V^T
-   \]
+       `Ŕ = U × Σ × Vᵀ`
+
    Each cell in `Ŕ` represents the predicted rating of a user for a product.
 4. Build a **recommendation function**:
    - Extract user’s actual and predicted ratings.
@@ -90,10 +89,7 @@ It leverages collaborative filtering and ranking-based techniques to analyze use
 ## 📊 Evaluation Metric
 
 **Root Mean Square Error (RMSE)** is used to assess the accuracy of predicted ratings:
-
-\[
-RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(r_{i} - \hat{r_{i}})^2}
-\]
+  `RMSE = sqrt( (1/n) * Σ (rᵢ - ŕᵢ)² )`
 
 ## 💡 Key Learnings
 - How to handle sparse user–item rating matrices.
